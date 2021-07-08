@@ -9,3 +9,5 @@ class Player():
         self.dx_weapon = dx_weapon
         self.sx_weapon = sx_weapon
         self.coins = coins
+    def __repr__(self) -> str:
+        return (f"Nome: {self.name}")
