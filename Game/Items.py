@@ -1,4 +1,9 @@
 from enum import Enum
+import json
+
+f = open('F:\Dev\PyDev\PyAdventure\Game\Databases\ItemDatabase.json',"r")
+
+data = json.loads(f.read())
 
 class Item():
     def __init__(self,name,cost,rarity) -> None:
@@ -18,4 +23,3 @@ class Weapon(Item):
         super().__init__(name, cost, rarity)
         self.damage,self.block,self.type = damage,block,damage_type
 
-SWORD = Weapon("Sword",5,1,7,Type.SLASH,1)

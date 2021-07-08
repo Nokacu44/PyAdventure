@@ -1,0 +1,8 @@
+{
+    "Items":{
+    
+        "apple" : {"cost" : 10, "rarity" : 1},
+        "chair" : {"cost" : 10, "rarity" : 1}
+    }
+
+}
